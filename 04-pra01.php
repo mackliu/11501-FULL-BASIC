@@ -40,7 +40,7 @@ echo $level;
 <h3>簡化寫法</h3>
 
 <?php
-$score=72;
+$score=82;
 $level='';
 if($score<0 || $score >100){
     $level="成績輸入錯誤";
@@ -56,7 +56,37 @@ if($score<0 || $score >100){
     $level="A";
 }
 
-echo $level;
+
 ?>
+
+<h3>依據學生成績等級給予評價</h3>
+
+<div>根據學生不同的成績等級在網頁上印出不同的文字評價</div>
+
+<?php
+echo "成績為：" . $score . "分 <br>";
+echo "成績等級為：" . $level . "<br>";
+
+echo "評語：";
+
+switch($level){
+    case "A":
+        echo "表現優良，請繼續保持";
+    break;
+    case "B":
+        echo "值得肯定，還有進步空間";
+    break;
+    case "C":
+        echo "需要更多的練習";
+    break;
+    case "D":
+        echo "需要加強基本功";
+    break;
+    default:
+        echo "是否無心學業?";
+
+}
+?>
+
 </body>
 </html>
