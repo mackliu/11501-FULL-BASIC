@@ -63,33 +63,33 @@ echo "</table>";
 <hr>
 <?php 
 
-echo "<table class='table1'>";
-echo "<tr style='background-color:#eee'>";
-echo "    <td></td>";
-echo "    <td>1</td>";
-echo "    <td>2</td>";
-echo "    <td>3</td>";
-echo "    <td>4</td>";
-echo "    <td>5</td>";
-echo "    <td>6</td>";
-echo "    <td>7</td>";
-echo "    <td>8</td>";
-echo "    <td>9</td>";
-echo "</tr>";
+echo "<table class='table1'>\n";
+echo "<tr style='background-color:#eee'>\n";
+echo "    <td></td>\n";
+echo "    <td>1</td>\n";
+echo "    <td>2</td>\n";
+echo "    <td>3</td>\n";
+echo "    <td>4</td>\n";
+echo "    <td>5</td>\n";
+echo "    <td>6</td>\n";
+echo "    <td>7</td>\n";
+echo "    <td>8</td>\n";
+echo "    <td>9</td>\n";
+echo "</tr>\n";
 
 for($j=1 ;$j<=9;$j++){
-    echo "<tr>";
-    echo "<td style='background-color:#eee'> $j </td>";
+    echo "<tr>\n";
+    echo "    <td style='background-color:#eee'> $j </td>\n";
     for($i=1;$i<=9;$i++){
-        echo "<td>";
+        echo "    <td>";
         if($i<=$j){
             echo ($j*$i);
         }
-        echo "</td>";
+        echo "</td>\n";
     }
-    echo "</tr>";
+    echo "</tr>\n";
 }
-echo "</table>";
+echo "</table>\n";
 ?>
 
 
