@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>畫星星</title>
+    <style>
+        *{
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
 </head>
 <body>
     
@@ -42,7 +47,33 @@ for($i=0;$i<5;$i++){
 
 
 <h3>倒直角三角型</h3>
+<?php 
+for($i=5;$i>0;$i--){
+
+    for($j=0;$j<$i;$j++){
+        echo "*";
+    }
+    echo "<br>";
+}
+
+
+?>
+
 <h3>正三角型</h3>
+<?php 
+for($i=0;$i<5;$i++){
+    for($j=0;$j<4-$i;$j++){
+        echo "&nbsp;";
+    }
+    for($k=0;$k<2*$i+1;$k++){
+        echo "*";
+    }
+    echo "<br>";
+
+}
+
+?>
+
 <h3>菱型</h3>
 <h3>矩形</h3>
 <h3>內含對角線的矩形</h3>
