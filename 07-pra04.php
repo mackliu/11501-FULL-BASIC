@@ -31,6 +31,66 @@ for($j=1 ;$j<=9;$j++){
 }
 echo "</table>";
 ?>
+<hr>
+<?php 
+
+echo "<table class='table1'>";
+echo "<tr style='background-color:#eee'>";
+echo "    <td></td>";
+echo "    <td>1</td>";
+echo "    <td>2</td>";
+echo "    <td>3</td>";
+echo "    <td>4</td>";
+echo "    <td>5</td>";
+echo "    <td>6</td>";
+echo "    <td>7</td>";
+echo "    <td>8</td>";
+echo "    <td>9</td>";
+echo "</tr>";
+
+for($j=1 ;$j<=9;$j++){
+    echo "<tr>";
+    echo "<td style='background-color:#eee'> $j </td>";
+    for($i=1;$i<=9;$i++){
+        echo "<td>";
+        echo ($j*$i);
+        echo "</td>";
+    }
+    echo "</tr>";
+}
+echo "</table>";
+?>
+<hr>
+<?php 
+
+echo "<table class='table1'>";
+echo "<tr style='background-color:#eee'>";
+echo "    <td></td>";
+echo "    <td>1</td>";
+echo "    <td>2</td>";
+echo "    <td>3</td>";
+echo "    <td>4</td>";
+echo "    <td>5</td>";
+echo "    <td>6</td>";
+echo "    <td>7</td>";
+echo "    <td>8</td>";
+echo "    <td>9</td>";
+echo "</tr>";
+
+for($j=1 ;$j<=9;$j++){
+    echo "<tr>";
+    echo "<td style='background-color:#eee'> $j </td>";
+    for($i=1;$i<=9;$i++){
+        echo "<td>";
+        if($i<=$j){
+            echo ($j*$i);
+        }
+        echo "</td>";
+    }
+    echo "</tr>";
+}
+echo "</table>";
+?>
 
 
 <p>&nbsp;</p>
