@@ -123,6 +123,59 @@
         ?>
 
         <h3 style="margin-top: 20px;">菱型</h3>
+
+        <?php 
+        //兩個正反的正三角型組合成菱形
+        for($i=0;$i<5;$i++){
+            for($j=0;$j<4-$i;$j++){
+                echo "&nbsp;";
+            }
+            for($k=0;$k<2*$i+1;$k++){
+                echo "*";
+            }
+            echo "<br>";
+        }
+        for($i=3;$i>=0;$i--){
+            for($j=0;$j<4-$i;$j++){
+                echo "&nbsp;";
+            }
+            for($k=0;$k<2*$i+1;$k++){
+                echo "*";
+            }
+            echo "<br>";
+        }
+
+
+        ?>
+    <hr>
+    <?php
+        for($i=0;$i<9;$i++){
+            if($i<=4){
+                $t=$i;
+            }else{
+                $t=8-$i;
+            }
+    echo $i;
+    echo ",";
+    echo $t;
+    echo ",";
+    echo 4-$t;
+    echo ",";
+    echo 2*$t+1;
+    echo ",";
+            for($j=0;$j<4-$t;$j++){
+                echo "&nbsp;";
+            }
+            for($k=0;$k<2*$t+1;$k++){
+                echo "*";
+            }
+            echo "<br>";
+        }
+
+    ?>
+
+
+
         <h3>矩形</h3>
         <h3>內含對角線的矩形</h3>
     </div>
