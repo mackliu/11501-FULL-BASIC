@@ -48,7 +48,7 @@
             color: white;
             font-family: 'Courier New', Courier, monospace;
             font-size: 1rem;
-            line-height: 1.8;
+            /* line-height: 1.8; */
         }
 
         .back-button {
@@ -174,9 +174,24 @@
 
     ?>
 
-
-
         <h3>矩形</h3>
+    <?php
+    for($i=0;$i<7;$i++){
+
+        for($j=0;$j<7;$j++){
+            if($i==0 || $i==6){
+                echo "*";
+            }else if($j==0 || $j==6){
+                echo "*";
+            }else{
+                echo "&nbsp;";
+            }
+        }
+        echo "<br>";
+
+    }
+
+    ?>
         <h3>內含對角線的矩形</h3>
     </div>
     <a href="index.html" class="back-button">返回首頁</a>
