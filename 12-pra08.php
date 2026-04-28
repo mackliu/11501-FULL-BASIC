@@ -35,7 +35,8 @@ echo "<hr>";
 foreach($lotto as $num){
     echo "$num , ";
 }
-
+echo "<br>特別號：";
+echo  rand(1,8);
 ?>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
